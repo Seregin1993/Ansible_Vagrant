@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  vars:
+    freeipaclient_force_join: true
+    freeipaclient_servers: 
+      - sowa1.test.local
+    freeipaclient_domain: test.local
+    freeipaclient_enroll_user: admin
+    freeipaclient_enroll_pass: password1
+    freeipaclient_hostname: sowa2.test.local
+  roles:
+    - freeipa-client
