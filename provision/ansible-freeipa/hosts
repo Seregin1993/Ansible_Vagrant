@@ -1,0 +1,9 @@
+[ipaserver]
+192.168.56.20
+
+[ipaserver:vars]
+ipaserver_domain=test.local
+ipaserver_realm=TEST.LOCAL
+ipaadmin_password=MySecretPassword123
+ipadm_password=MySecretPassword234
+ipaserver_auto_forwarders=no
