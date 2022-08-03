@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: ipaclients
   vars:
     freeipaclient_force_join: true
     freeipaclient_servers: 
