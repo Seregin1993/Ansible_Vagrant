@@ -1,0 +1,320 @@
+{
+    "files": [
+        {
+            "name": ".",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": ".gitignore",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "408b489035dcfebf742c9db2f1402f40a490b2a1bdabc6001803e0c02bc0abb7",
+            "format": 1
+        },
+        {
+            "name": "ansible.cfg",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "588224370deb1bda540ee9781d5e6d0c85aa5866b18a38266a1a9216c8efc911",
+            "format": 1
+        },
+        {
+            "name": "foreman-smart-proxy.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "b0a8a51238c22ad69fad5636ed384730db3249d36b71f67adf67c0682309c4e9",
+            "format": 1
+        },
+        {
+            "name": "foreman.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "bceca8d3ae786f1c3c7f807c120eb320338fcfd046201f9f56969635eea3ad3d",
+            "format": 1
+        },
+        {
+            "name": "galaxy.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "7611fd54f331c56ecacd15a82209785574cba24504fe06a06390d6dd1a0b0da6",
+            "format": 1
+        },
+        {
+            "name": "install-foreman-smart-proxy.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "46d06940f625a3a11d0c369b7381b3412f7f26733c774b37abea65f1f11761cf",
+            "format": 1
+        },
+        {
+            "name": "install-foreman.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "6c080217bf7a4d6021dadf750bfeb3b458c11fe93cfc3e678de019633c36d2ad",
+            "format": 1
+        },
+        {
+            "name": "install.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "75f101b312328ab9bc931c7ab93590be44a16f672b2335dc7e34599054f16416",
+            "format": 1
+        },
+        {
+            "name": "inventory.sample",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "cd9451077cc1fe513f5568514f023bdfcc1fb131f788dcfdfce892d3c80206d8",
+            "format": 1
+        },
+        {
+            "name": "README.md",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "47b0050a97fbece46a448204496f791bede3e40db5d7873fe0fd404b334a0779",
+            "format": 1
+        },
+        {
+            "name": "group_vars/all.yml.sample",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "57469be2b2e0d33b3115ffb7f030fba81c3a0861d665f1e6d8ffcebebc3669af",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/defaults",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/files",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/handlers",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/tasks",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/templates",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/vars",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/defaults/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/files/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/files/sync_media.sh",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "80be8e2aa19fd69371967e3e32acebe89455425c1c32baa25e4b8d334f92446a",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/handlers/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/tasks/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "8b79379d90d00663e2b4a53e518def0cc878df7febb5ca170d5415af27f40f90",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/templates/install-foreman-with-proxy.j2",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "2009a71ce8b00527c2e1ab00232d9f4c0bf5f8f47952ebe0491ecefa7eeddb2a",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/templates/install-foreman.j2",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "2009a71ce8b00527c2e1ab00232d9f4c0bf5f8f47952ebe0491ecefa7eeddb2a",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/templates/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman/vars/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/defaults",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/files",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/handlers",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/tasks",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/templates",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/vars",
+            "ftype": "dir",
+            "chksum_type": null,
+            "chksum_sha256": null,
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/defaults/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/files/dirlisting.conf",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "241d2a702f87c589eb45d00ce337cd4ace3adb7e8152b45f2b495d8c984865fb",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/files/lighttpd.conf",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "61c1e5bef52c6ecc268a06a3ee1a2dcc9669173cbc4f436dd5e464d5b71d5888",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/files/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/handlers/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/tasks/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "20d0c9d72ce5c1b6e2a5f656af3430d9c58d56a7e42d352411c0ea7edbb67674",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/templates/install-foreman-aio.j2",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "20105e1084f316af5ade40e4d532edfd31ad133ac231ac9bdbe645b8cc0c8eda",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/templates/install-foreman.j2",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "ed9fff09f62274d07cd162d86dda8b20cd4683441009e4f7e0cfb3a500b53326",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/templates/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "format": 1
+        },
+        {
+            "name": "roles/foreman-smart-proxy/vars/main.yml",
+            "ftype": "file",
+            "chksum_type": "sha256",
+            "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "format": 1
+        }
+    ],
+    "format": 1
+}

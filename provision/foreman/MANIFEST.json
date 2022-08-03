@@ -1,0 +1,36 @@
+{
+    "collection_info": {
+        "namespace": "armar_reggans",
+        "name": "foreman_basic_installer",
+        "version": "1.0.5",
+        "license": [
+            "MIT"
+        ],
+        "description": "This is an Ansible playbook to install and configure Foreman and Foreman Smart Proxies. This playbook was designed to be an easy way to get Foreman/Foreman Proxies installed and configured for provisioning.",
+        "repository": "https://github.com/armar-reggans/foreman_basic_installer",
+        "documentation": "https://github.com/armar-reggans/foreman_basic_installer",
+        "homepage": "http://www.stninc.com",
+        "issues": "https://github.com/armar-reggans/foreman_basic_installer/issues",
+        "authors": [
+            "Armar Reggans <armar@reggans.com>"
+        ],
+        "tags": [
+            "foreman",
+            "smart",
+            "proxy",
+            "smartproxy",
+            "collection"
+        ],
+        "license_file": null,
+        "readme": "README.md",
+        "dependencies": {}
+    },
+    "file_manifest_file": {
+        "name": "FILES.json",
+        "ftype": "file",
+        "chksum_type": "sha256",
+        "chksum_sha256": "ce1b957d3f8f352e006ee4434b9bd3ab328b51e640512b082f5a6f1c6fb03a90",
+        "format": 1
+    },
+    "format": 1
+}

@@ -1,0 +1,4 @@
+freeipaclient_install_command: '/sbin/ipa-client-install'
+freeipaclient_packages:
+ - ipa-client
+ - "{{ 'dbus-python' if ansible_distribution_major_version=='7' else 'python3-into-dbus-python' }}"
