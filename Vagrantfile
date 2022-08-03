@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
   end
   
   config.vm.define "sowa2" do |node|
-  node.vm.provision  "ansible", playbook: "provision/freeipa_client.yml", inventory_path:"provision/hosts_freeipaclient", limit: "all"
+  node.vm.provision  "ansible", playbook: "provision/freeipa_client.yml", inventory_path:"provision/ansible-freeipa/hosts_ipa", limit: "all"
   node.vm.provision  "ansible", playbook: "provision/foreman/install-foreman.yml", inventory_path:"provision/foreman/inventory", limit: "all"
   end
   
