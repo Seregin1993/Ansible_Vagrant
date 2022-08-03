@@ -1,0 +1,100 @@
+---
+# tasks file for ansible-zabbix-docker
+- name: Create zabbix network
+  docker_network:
+    name: zabbix_network
+    driver_options:
+      com.docker.network.enable_ipv6: "false"
+    ipam_config:
+      - subnet: "{{ zabbix.subnet }}"
+        gateway: "{{ zabbix.gateway }}"
+
+- name: Set zabbix-db state to {{ container_state }}
+  docker_container:
+    name: zabbix-db
+    image: mysql:5.7
+    state: "{{ container_state }}"
+    volumes: "{{ zabbix_volumes.database }}"
+    env: "{{ zabbix_env.database }}"
+    purge_networks: yes
+    networks:
+      - name: zabbix_network
+        aliases:
+          - mysql-server
+          - zabbix-database
+          - mysql-database
+  tags: zabbix-db
+
+- name: Set zabbix-server state to {{ container_state }}
+  docker_container:
+    name: zabbix-server
+    image: zabbix/zabbix-server-mysql
+    state: "{{ container_state }}"
+    ulimits:
+      - nofile:20000:40000
+      - nproc:65535
+    memory: 512MB
+    ports:
+      - "10051:10051"
+    volumes: "{{ zabbix_volumes.shared | union(zabbix_volumes.server) }}"
+    links:
+      - zabbix-db:zabbix-db
+    env: "{{ zabbix_env.database | combine(zabbix_env.server) }}"
+    purge_networks: yes
+    networks:
+      - name: zabbix_network
+        aliases:
+         - zabbix-server
+         - zabbix-server-mysql
+  tags: zabbix-server
+
+- name: Set zabbix-web state to {{ container_state }}
+  docker_container:
+    name: zabbix-web
+    image: zabbix/zabbix-web-nginx-mysql
+    state: "{{ container_state }}"
+    memory: 512MB
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes: "{{ zabbix_volumes.web }}"
+    links:
+      - zabbix-db:zabbix-db
+      - zabbix-server:zabbix-server
+    env: "{{ zabbix_env.database | combine(zabbix_env.web) }}"
+    purge_networks: yes
+    networks:
+      - name: zabbix_network
+        aliases:
+         - zabbix-web-nginx-mysql
+  tags: zabbix-web
+
+- name: Set zabbix-agent state to {{ container_state }}
+  docker_container:
+    name: zabbix-agent
+    image: zabbix/zabbix-agent
+    state: "{{ container_state }}"
+    ports:
+      - "10050:10050"
+    volumes: "{{ zabbix_volumes.shared | union(zabbix_volumes.agent) }}"
+    links:
+      - zabbix-server:zabbix-server
+    env: "{{ zabbix_env.agent }}"
+    privileged: true
+    pid_mode: "host"
+    purge_networks: yes
+    networks:
+      - name: zabbix_network
+        aliases:
+         - zabbix-agent
+         - zabbix-agent-passive
+  tags: zabbix-agent
+
+- name: Check if zabbix is up
+  uri:
+    url: "http://localhost"
+  when: container_state == 'started'
+  register: uri_result
+  until: uri_result.status == 200
+  retries: 10
+  check_mode: no
